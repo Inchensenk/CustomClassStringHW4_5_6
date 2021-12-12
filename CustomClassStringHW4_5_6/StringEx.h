@@ -11,9 +11,10 @@ private:
     //length переменная, хранящая количество символов в строке
     int length;
 public:
+    //геттер для массива str
     char* getStr();
     
-
+    //геттер для поля length
     int getLength();
     
 
