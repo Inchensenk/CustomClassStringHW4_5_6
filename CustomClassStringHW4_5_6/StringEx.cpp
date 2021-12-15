@@ -486,7 +486,8 @@ char** StringEx::split(char sep, bool print)
         }
     }
     //если данный параметр true то выводим массив в консоль
-    if (print)
+    if (print) 
+    {
         for (int i = 0; i < numrow; i++)
         {
             for (int j = 0; j < StringEx::size(spl[i]); j++)
@@ -495,6 +496,23 @@ char** StringEx::split(char sep, bool print)
             }
             cout << endl;
         }
-    //возвращаем указатель на зубчатый массив
-    return spl;
+       
+        //возвращаем указатель на зубчатый массив
+        return spl;
+    }
+        
+}
+
+int StringEx::operator-(const StringEx& other)
+{
+
+   return StringEx::contains(this->str, other.str);
+       
+}
+
+char** StringEx::operator/(char sep)
+{
+    StringEx result = *this;
+
+    return result.split(sep);
 }

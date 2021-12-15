@@ -7,7 +7,7 @@ class StringEx
 private:
     //указатель на массив char, хранит символы которые мы передали в наш объект
     char* str;
-
+    
     //length переменная, хранящая количество символов в строке
     int length;
 public:
@@ -40,7 +40,7 @@ public:
         
     /*Перегрузка оператора сложения, который будет возвращать объект StringEx*/
 
-    //ПЕРЕГРУЗКА ОПЕРАТОРА СЛОЖЕНИЯ ДЛЯ КОНКАТЕНАЦИИ СТРОКИ 
+    //ПЕРЕГРУЗКА ОПЕРАТОРА СЛОЖЕНИЯ '+', ДЛЯ КОНКАТЕНАЦИИ СТРОКИ 
     StringEx operator + (const StringEx& other);
     
 
@@ -162,7 +162,10 @@ public:
     
     //РАЗДЕЛЕНИЕ СТРОКИ НА ПОДСТРОКИ
     char** split(char sep, bool print = true);
+
+    int operator-(const StringEx& other);
+
+    char** operator/(char sep);
     
-
+    
 };
-

@@ -5,21 +5,21 @@
 int main()
 {
     //инициализация str строкой "Hello" при помощи конструктора с параметром
-    StringEx str("first");
+    StringEx str("Hello");
 
     //инициализация str2 строкой "World" при помощи конструктора с параметром
-    StringEx str2("second");
+    StringEx str2("lo");
 
     //конокотанация при помощи перегруженного оператора +
     StringEx result = str + str2;
 
-    //вывод результирующей строки
-    result.print();
+    ////вывод результирующей строки
+    //result.print();
 
-    //вывод размера  строки
-    cout << str.Length() << endl;
-    cout << str2.Length() << endl;
-    cout << result.Length() << endl;
+    ////вывод размера  строки
+    //cout << str.Length() << endl;
+    //cout << str2.Length() << endl;
+    //cout << result.Length() << endl;
     
 
 
@@ -27,17 +27,21 @@ int main()
     ////просто компилятор позволяет это все не писать: (bool equal = str.operator==(str2)), а просто можно писать так:  (bool equal = str == str2;) чтобы было проще
     //bool equal = str == str2;
 
-    str.print();
+   /* str.print();
     cout << endl;
     str[0] = 'S';
     str.print();
 
     cout<<StringEx::contains(str.getStr(), str2.getStr());
 
-    cout << StringEx::insert(str.getStr(), str2.getStr(), 3);
+    cout << StringEx::insert(str.getStr(), str2.getStr(), 3);*/
 
     StringEx strspl = "Royal/Never/Give/Up";
-    strspl.split('/');
+    //strspl.split('/');
+    //StringEx res = str-str2;
+    char** rezzzzz = strspl / '/';
+    cout << endl;
+    cout << str - str2;
     return 0;
 }
 
