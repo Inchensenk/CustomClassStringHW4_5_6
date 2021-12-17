@@ -5,13 +5,13 @@
 int main()
 {
     //инициализация str строкой "Hello" при помощи конструктора с параметром
-    StringEx str("Hello");
-
+    StringEx str("");
+    
     //инициализация str2 строкой "World" при помощи конструктора с параметром
     StringEx str2("lo");
 
     //конокотанация при помощи перегруженного оператора +
-    StringEx result = str + str2;
+    //StringEx result = str + str2;
 
     ////вывод результирующей строки
     //result.print();
@@ -36,12 +36,13 @@ int main()
 
     cout << StringEx::insert(str.getStr(), str2.getStr(), 3);*/
 
-    StringEx strspl = "Royal/Never/Give/Up";
+    //StringEx strspl = "Royal/Never/Give/Up";
     //strspl.split('/');
     //StringEx res = str-str2;
-    char** rezzzzz = strspl / '/';
+    /*char** rezzzzz = strspl / '/';
     cout << endl;
-    cout << str - str2;
-    return 0;
+    cout << str - str2;*/
+    cout<<str.isEmpty();
+    return 5;
 }
 

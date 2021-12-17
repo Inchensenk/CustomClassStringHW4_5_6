@@ -516,3 +516,23 @@ char** StringEx::operator/(char sep)
 
     return result.split(sep);
 }
+
+bool StringEx::isEmpty()
+{
+    if(str == "" || str == "\0" || str == nullptr || size(str) == 0) return true;
+      
+    else return false;
+}
+
+void StringEx::clean()
+{
+   str == nullptr;
+}
+
+
+
+
+
+
+
+

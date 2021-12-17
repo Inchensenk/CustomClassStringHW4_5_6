@@ -163,9 +163,13 @@ public:
     //РАЗДЕЛЕНИЕ СТРОКИ НА ПОДСТРОКИ
     char** split(char sep, bool print = true);
 
+    //Перегрузка оператора вычетания '-' методом contains()
     int operator-(const StringEx& other);
-
+    //Перегрузка оператора деления '/' методом split()
     char** operator/(char sep);
     
-    
+    //Проверка строки на пустоту
+    bool isEmpty();
+   //
+    void clean();
 };
